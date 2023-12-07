@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <TargetFrameworks>net6.0;net7.0;net48;net481</TargetFrameworks>
+        <LangVersion>10.0</LangVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>ConfigManager</Title>
+        <Description>Enum based config manager</Description>
+        <PackageProjectUrl>https://github.com/WeeXnes/ConfigManager</PackageProjectUrl>
+        <Version>1.0.1</Version>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="System.Net.Http" Condition="'$(TargetFramework)' == 'net48' OR '$(TargetFramework)' == 'net481'" />
+    </ItemGroup>
+
+</Project>
